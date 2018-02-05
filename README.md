@@ -3,7 +3,9 @@
 ## Dataverse Scaling!
 
 Project Team: 
+
 Students: Ashwin Pillai, James Michael Clifford, Ryan Morano, Patrick Dillon
+
 Mentors: Dan McPherson, Phil Durbin, Solly Ross
 
 

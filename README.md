@@ -32,15 +32,15 @@ Companies - Want to track the running instances of dataverse and collect results
 
 ### Scope and Features:
 	
-While the code uses OpenShift, all of the contributions will be in the Dataverse project
-Updated configuration of existing containerized instances of Dataverse to support reliable scaling.  Including, PostgreSQL, Glassfish and Solr
-Installation script (extend existing) - easy local 
+ - While the code uses OpenShift, all of the contributions will be in the Dataverse project
+ - Updated configuration of existing containerized instances of Dataverse to support reliable scaling.  Including, PostgreSQL, Glassfish and Solr
+ - Installation script (extend existing) - easy local 
 
 ### Solution Concept:
-PostgreSQL
-Use StatefulSets to create single-master replicated DB
-Update Dockerfile (if necessary)
-OpenShift Deployment/Pod (DeploymentConfig in openshift.json)
+ - PostgreSQL
+	- Use StatefulSets to create single-master replicated DB
+	- Update Dockerfile (if necessary)
+	- OpenShift Deployment/Pod (DeploymentConfig in openshift.json)
 Modify application code to access DB container service
 Glassfish
 Use StatefulSets to create single-master replicated servers

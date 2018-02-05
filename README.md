@@ -70,7 +70,7 @@ Companies - Want to track the running instances of dataverse and collect results
 
 Detailed users stories and plans are available at https://tree.taiga.io/project/msdisme-2018-bucs528-template-6/ 
 
-Release #1(Feb 8) 
+Release #1(Feb 8) - Initial
  - Stand up Dataverse on local OpenShift (using minishift)
  - Develop user stories
  - Prepare presentation

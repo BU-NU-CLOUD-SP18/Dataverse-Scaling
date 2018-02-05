@@ -71,23 +71,24 @@ Companies - Want to track the running instances of dataverse and collect results
 Detailed users stories and plans are available at https://tree.taiga.io/project/msdisme-2018-bucs528-template-6/ 
 
 Release #1(Feb 8) 
-Stand up Dataverse on local OpenShift (using minishift)
-Develop user stories
-Prepare presentation
+ - Stand up Dataverse on local OpenShift (using minishift)
+ - Develop user stories
+ - Prepare presentation
 
 Release #2 (Feb 22) - Glassfish
-Modify OpenShift config in Dataverse to allow a scaled Glassfish
+ - Modify OpenShift config in Dataverse to allow a scaled Glassfish
+
 Release #3 (Mar 15) - Glassfish
-Finish Glassfish
+ - Finish Glassfish
 
 Release #4 (Mar 29) - PostgreSQL
-Modify OpenShift config in Dataverse to allow scaled db
-Modify OpenShift config in Dataverse to allow a scaled PostgreSQL
+ - Modify OpenShift config in Dataverse to allow scaled db
+ - Modify OpenShift config in Dataverse to allow a scaled PostgreSQL
 
 Release #5 (Apr 12) - PostGreSQL
-Finish PostgreSQL
+ - Finish PostgreSQL
      
 Release #6 (Apr 26) - Solr
-Deploy Dataverse into the MOC’s OpenShift deployment
-Run the load test against Dataverse in the MOC.
+ - Deploy Dataverse into the MOC’s OpenShift deployment
+ - Run the load test against Dataverse in the MOC.
 

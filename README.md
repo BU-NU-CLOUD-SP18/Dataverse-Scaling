@@ -2,7 +2,7 @@
 
 # Dataverse Scaling!
 
-Project Team: 
+## Project Team: 
 
 Students: Ashwin Pillai, James Michael Clifford, Ryan Morano, Patrick Dillon
 

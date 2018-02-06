@@ -82,7 +82,6 @@ Release #3 (Mar 15) - Glassfish
  - Finish Glassfish
 
 Release #4 (Mar 29) - PostgreSQL
- - Modify OpenShift config in Dataverse to allow scaled db
  - Modify OpenShift config in Dataverse to allow a scaled PostgreSQL
 
 Release #5 (Apr 12) - PostGreSQL

@@ -75,18 +75,18 @@ Release #1(Feb 8) - Initial
  - Develop user stories
  - Prepare presentation
 
-Release #2 (Feb 22) - Glassfish
- - Modify OpenShift config in Dataverse to allow a scaled Glassfish
-
-Release #3 (Mar 15) - Glassfish
- - Finish Glassfish
-
-Release #4 (Mar 29) - PostgreSQL
+Release #2 (Feb 22) - PostgreSQL
  - Modify OpenShift config in Dataverse to allow a scaled PostgreSQL
 
-Release #5 (Apr 12) - PostGreSQL
+Release #3 (Mar 15) - PostgreSQL
  - Finish PostgreSQL
-     
+
+Release #4 (Mar 29) - Glassfish
+ - Modify OpenShift config in Dataverse to allow a scaled Glassfish
+
+Release #5 (Apr 12) - Glassfish
+ - Finish Glassfish
+
 Release #6 (Apr 26) - Solr
  - Deploy Dataverse into the MOC’s OpenShift deployment
  - Run the load test against Dataverse in the MOC.

@@ -6,7 +6,7 @@
 
 Students: Ashwin Pillai, James Michael Clifford, Ryan Morano, Patrick Dillon
 
-Mentors: Dan McPherson, Phil Durbin, Solly Ross
+Mentors: Dan McPherson (Red Hat), Phil Durbin (Harvard), Solly Ross (Red Hat)
 
 ## Our Dataverse Fork:
 https://github.com/EC528-Dataverse-Scaling/dataverse

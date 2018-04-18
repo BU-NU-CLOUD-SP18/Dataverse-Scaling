@@ -19,6 +19,9 @@ Therefore, the overarching goal of our current work is to aid in developing a mo
 
 The final outcome of our work will include a one-click deployment of a fully scalable instance of Dataverse running on top of OpenShift on the MOC.   
 
+![The beginning state of the project](https://github.com/BU-NU-CLOUD-SP18/Dataverse-Scaling/blob/master/project_initial.png)
+![The final state of the project](https://github.com/BU-NU-CLOUD-SP18/Dataverse-Scaling/blob/master/project_final.png)
+![Future work](https://github.com/BU-NU-CLOUD-SP18/Dataverse-Scaling/blob/master/project_future.png)
 
 ## Users of the Project:
 

@@ -13,35 +13,30 @@ https://github.com/EC528-Dataverse-Scaling/dataverse
 
 ## Vision and Goals:
 
-Dataverse is an open source web application to share, preserve, cite, explore, and analyze research data. It facilitates making data available to others, and allows users to replicate others' work more easily. Researchers, data authors, publishers, data distributors, and affiliated institutions all receive academic credit and web visibility. However, the current Dataverse infrastructure has not been built for scale or high availability and the current development road map is focused on creating new features instead of making the product more resilient and easier to host.  
-
-Therefore, the overarching goal of our current work is to aid in developing a more resilient and scalable deployment of Dataverse with OpenShift to deploy on the MOC. Specifically, we aim to make each of the existing components of Dataverse function at scale within OpenShift, including seamless integration with Glassfish, Postgresql and Solr. 
-
-The final outcome of our work will include a one-click deployment of a fully scalable instance of Dataverse running on top of OpenShift on the MOC.   
+Dataverse is a popular open-source web application to share, preserve, cite, explore, and analyze research data. It facilitates making data available to others, and allows users to easily replicate work. However, the current Dataverse infrastructure has not been built for scale or high availability and the current development road map is focused on creating new features instead of making the product more resilient and easier to host. Dataverse was originally built as a single-deployment three-tier application. Our mentors collaborated to containerize the components of Dataverse and run Dataverse on OpenShift.
 
 ![The beginning state of the project](https://github.com/BU-NU-CLOUD-SP18/Dataverse-Scaling/blob/master/project_initial.png)
-![The final state of the project](https://github.com/BU-NU-CLOUD-SP18/Dataverse-Scaling/blob/master/project_final.png)
-![Future work](https://github.com/BU-NU-CLOUD-SP18/Dataverse-Scaling/blob/master/project_future.png)
+
+Our project is to advance this initial containerization work toward making Dataverse more scalable. As pictured above, after the initial containerization there is a single instance of each componenet. Our project will achieve scalability by allowing components to scale horizontally to multiple instances. We will incoprorate this scalability into the Dataverse project so that system administrators and developers can setup a scalable deployment of Dataverse out of the box.
+
 
 ## Users of the Project:
 
-Researchers - Want to publish data and analyse code on a reliable platform that can handle a high volume of traffic if research findings see a spike in popularity. Also open to be able to reexamine existing data in a new way, for example use machine learning. 
+Users of the Dataverse project in general include researchers, journals, research and academic institutions, and companies. Our project work is directed toward the following users:
 
-Journals - Want to verify and publish author’s research findings and data using dataverse repositories to increase the impact of journals and preserve data and make it citable.
+- Software Developers - Want to develop Dataverse on a local version of OpenShift and easily deploy changes to production
+- System Adminstators - Want to easily deploy Dataverse to the cloud or local servers
+- Database Adminstators - Want to manage the Postgres databases deployed in Dataverse
 
-Institutions - Need a place to host research data using customized dataverses for researchers, departments, and faculty to share their data. Deploying scalable Dataverse on OpenShift to production should be simple.
-
-Developers - Develop Dataverse on a local version of OpenShift and easily deploy changes to production
-
-Companies - Want to track the running instances of dataverse and collect results from tests.
 
 ## Scope and Features:
-	
- - While the code uses OpenShift, all of the contributions will be in the Dataverse project
+
  - Updated configuration of existing containerized instances of Dataverse to support reliable scaling.  Including, PostgreSQL, Glassfish and Solr
  - Installation script (extend existing) - easy developer setup
 
 ## Solution Concept:
+![The final state of the project](https://github.com/BU-NU-CLOUD-SP18/Dataverse-Scaling/blob/master/project_final.png)
+
 - PostgreSQL
   - Use StatefulSets to create single-master replicated DB
   - Update Dockerfile (if necessary)
@@ -97,3 +92,5 @@ Release #6 (Apr 26) - Finish deployment/load test on MOC & Solr
  - Deploy Dataverse into the MOC’s OpenShift deployment
  - Run the load test against Dataverse in the MOC.
 
+## Future Work:
+![Future work](https://github.com/BU-NU-CLOUD-SP18/Dataverse-Scaling/blob/master/project_future.png)

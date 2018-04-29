@@ -11,6 +11,9 @@ Mentors: Dan McPherson (Red Hat), Phil Durbin (Harvard), Solly Ross (Red Hat)
 ## Our Dataverse Fork:
 https://github.com/EC528-Dataverse-Scaling/dataverse
 
+## Our Project Video
+https://goo.gl/Fa8dvH
+
 ## Vision and Goals:
 
 Dataverse is a popular open-source web application to share, preserve, cite, explore, and analyze research data. It facilitates making data available to others, and allows users to easily replicate work. However, the current Dataverse infrastructure has not been built for scale or high availability and the current development road map is focused on creating new features instead of making the product more resilient and easier to host. Dataverse was originally built as a single-deployment three-tier application. Our mentors collaborated to containerize the components of Dataverse and run Dataverse on OpenShift.

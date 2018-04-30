@@ -8,13 +8,36 @@ Students: Ashwin Pillai, James Michael Clifford, Ryan Morano, Patrick Dillon
 
 Mentors: Dan McPherson (Red Hat), Phil Durbin (Harvard), Solly Ross (Red Hat)
 
-## Our Dataverse Fork:
-https://github.com/EC528-Dataverse-Scaling/dataverse
-
 ## Our Project Video
 https://goo.gl/Fa8dvH
 
-## MOC Deployment Instructions:
+## Our Work on GitHub:
+### Dataverse Fork:
+https://github.com/EC528-Dataverse-Scaling/dataverse
+### Pull Requests:
+![Postgres Pull Request](https://github.com/IQSS/dataverse/pull/4599)
+![Glassfish(and merged Postgres) Pull Request](https://github.com/IQSS/dataverse/pull/4626)
+
+## MOC Deployment
+http://dataverse-dvs.openapp.cloud 
+
+##  Deployment Instructions
+
+### Local
+
+Local deployment of Dataverse on OpenShift is simple, you just need to get Minishift.
+
+1. ![Install Minishift] (https://docs.openshift.org/latest/minishift/getting-started/installing.html) (on Mac you can `brew cask install minishift`)
+2. `minishift start` (while that's running you could do the next step)
+3. clone our repo (then make sure you are on the develop branch)
+4. `cd dataverse/conf/openshift/`
+5. `oc login -u developer` (you can then use any password, gibberish, it will not be needed again and can be different each time)
+6. `oc new-project dataverse`
+7. `oc new-app openshift.json`
+8. `minishift console` will then open the web interface
+
+
+### MOC
 
 In order to deploy the scalable, containerized implementation of Dataverse that we have worked on this semester, you should perform the following steps:
 

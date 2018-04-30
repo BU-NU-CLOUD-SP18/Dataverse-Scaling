@@ -23,7 +23,7 @@ In order to deploy the scalable, containerized implementation of Dataverse that 
 3. Log in to your OpenShift Instance. 
 4. In the terminal run the following comands:
      - oc new-project <ANY_NAME>
-     - oc new-app -f <LOCATION_OF_DIRECTOY/conf/openshift/openshift.json>
+     - oc new-app -f <LOCATION_OF_DIRECTORY/conf/openshift/openshift.json>
 
 The Dataverse application should now be deployed in OpenShift. Go to your Openshift web console to confirm that the pods are deploying. The application takes a few minutes to succfully install everything. Once the application files have been installed in all pods, you can access the Dataverse applicatoin via the route provided in the Openshift web console in the upper right hand corner.      
 

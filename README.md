@@ -27,7 +27,7 @@ http://dataverse-dvs.openapp.cloud
 
 Local deployment of Dataverse on OpenShift is simple, you just need to get Minishift.
 
-1. ![Install Minishift] (https://docs.openshift.org/latest/minishift/getting-started/installing.html) (on Mac you can `brew cask install minishift`)
+1. [Install Minishift](https://docs.openshift.org/latest/minishift/getting-started/installing.html) (on Mac you can `brew cask install minishift`)
 2. `minishift start` (while that's running you could do the next step)
 3. clone our repo (then make sure you are on the develop branch)
 4. `cd dataverse/conf/openshift/`
@@ -133,3 +133,9 @@ Release #6 (Apr 26) - Finish deployment/load test on MOC & Solr
 
 ## Future Work:
 ![Future work](https://github.com/BU-NU-CLOUD-SP18/Dataverse-Scaling/blob/master/project_future.png)
+
+We accomplished all of the goals of our project, but a fully scalable Dataverse will require further work.
+
+- Solr: needs to be transitioned to stateful sets
+- Glassfish: could be improved by having only the master create initial databases, although this is not strictly necessary
+- Postgres: Substantial work will be needed to make Postgres scale fully. We did the initial work of adding master/slave replication. Our work created a read/write. A fully scaled version, pictured above, would include a read-only service, which the Dataverse application could choose from when eventually-consistent reads would be acceptable. This change will require substantial changes to the Dataverse codebase.

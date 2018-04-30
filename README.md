@@ -15,8 +15,8 @@ https://goo.gl/Fa8dvH
 ### Dataverse Fork:
 https://github.com/EC528-Dataverse-Scaling/dataverse
 ### Pull Requests:
-*[Postgres Pull Request](https://github.com/IQSS/dataverse/pull/4599)
-*[Glassfish(and merged Postgres) Pull Request](https://github.com/IQSS/dataverse/pull/4626)
+- [Postgres Pull Request](https://github.com/IQSS/dataverse/pull/4599)
+- [Glassfish(and merged Postgres) Pull Request](https://github.com/IQSS/dataverse/pull/4626)
 
 ## MOC Deployment
 http://dataverse-dvs.openapp.cloud 
@@ -27,7 +27,7 @@ http://dataverse-dvs.openapp.cloud
 
 Local deployment of Dataverse on OpenShift is simple, you just need to get Minishift.
 
-1. [Install Minishift] (https://docs.openshift.org/latest/minishift/getting-started/installing.html) (on Mac you can `brew cask install minishift`)
+1. ![Install Minishift] (https://docs.openshift.org/latest/minishift/getting-started/installing.html) (on Mac you can `brew cask install minishift`)
 2. `minishift start` (while that's running you could do the next step)
 3. clone our repo (then make sure you are on the develop branch)
 4. `cd dataverse/conf/openshift/`
